@@ -1,0 +1,76 @@
+{
+    "name": "PlayerInputSystem",
+    "maps": [
+        {
+            "name": "Octopus",
+            "id": "5193a806-9afa-40a9-a8be-b66b22f5956f",
+            "actions": [
+                {
+                    "name": "MouseDelta",
+                    "type": "Value",
+                    "id": "a1025e9a-ad13-4308-bd7a-69dc4f7bc846",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseLeftButton",
+                    "type": "Button",
+                    "id": "cc5025ea-a4f2-40ea-8d0e-318bde44a436",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "One Modifier",
+                    "id": "f6605bfa-8bee-4fef-bdf2-be5725f77c41",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseDelta",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "b045d586-e6d6-43e4-9bee-50000ba64446",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "c2e66367-ed23-42b9-bd5c-7ed825604c48",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "35984a8a-df2d-4e38-b64b-6c6ebefde5d0",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseLeftButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
