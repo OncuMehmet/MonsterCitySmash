@@ -33,7 +33,7 @@ public class PlayerMovementController : MonoBehaviour
         _isReadyToPlay = true;
     }
 
-    public void UpdateRunnerInputValue(HorizontalInputParams inputParam)
+    public void UpdateInputValue(HorizontalInputParams inputParam)
     {
         _inputValue = inputParam.XValue;
         _clampValues = inputParam.ClampValues;
@@ -53,10 +53,10 @@ public class PlayerMovementController : MonoBehaviour
             {
                 OctopusMove();
             }
-            else
-            {
-                StopSideways();
-            }
+            //else
+            //{
+            //    StopSideways();
+            //}
         }
         else
             Stop();
@@ -84,11 +84,12 @@ public class PlayerMovementController : MonoBehaviour
         _sidewaysEnable = isSidewayEnabled;
     }
 
-    private void StopSideways()
-    {
-        rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, _movementData.ZSpeed);
-        rigidbody.angularVelocity = Vector3.zero;
-    }
+    //private void StopSideways()
+    //{
+    //    rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, _movementData.ZSpeed);
+    //    rigidbody.angularVelocity = Vector3.zero;
+    //}
+
     public void Stop()
     {
         rigidbody.velocity = Vector3.zero;
@@ -105,10 +106,7 @@ public class PlayerMovementController : MonoBehaviour
         _isReadyToPlay = false;
     }
    
-    public void ChangeVerticalMovement(float _verticalSpeed)
-    {
-        _movementData.ZSpeed = _verticalSpeed;
-    }
+   
 
     
 

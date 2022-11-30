@@ -6,7 +6,7 @@ using System;
 [Serializable]
 public class PlayerData
 {
-    public PlayerMovementData MovementData;
+    public PlayerMovementData PlayerMovementData;
 }
 
 [Serializable]
